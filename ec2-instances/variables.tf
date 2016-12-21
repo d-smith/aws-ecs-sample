@@ -15,12 +15,8 @@ variable "instance_type" {
   default = "t2.micro"
 }
 
-variable "key_name" {
-  description = "The aws ssh key name."
-  default = ""
-}
-
-
 variable "subnet_a" {}
 variable "subnet_b" {}
 variable "profile_name" {}
+variable "vpc_id" {}
+variable "key_name" {}
