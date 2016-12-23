@@ -1,0 +1,27 @@
+[
+        {
+            "name": "hc",
+            "image": "xtracdev/hc",
+            "cpu": 10,
+            "memory": 300,
+            "portMappings": [
+                {
+                    "containerPort": 5000,
+                    "hostPort": 15000
+                }
+            ],
+            "essential": true,
+            "mountPoints": [
+                {
+                    "sourceVolume": "root",
+                    "containerPath": "/rootfs",
+                    "readOnly": true
+                },
+                {
+                    "sourceVolume": "var_run",
+                    "containerPath": "/var/run",
+                    "readOnly": false
+                }
+            ]
+        }
+    ]

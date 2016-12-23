@@ -1,3 +1,6 @@
 #!/bin/bash
 echo ECS_CLUSTER=dev-center >> /etc/ecs/ecs.config
 start ecs
+yum install -y aws-cli jq
+mkdir -p /home/ec2-user/certs
+aws s3 cp s3://ds-misc-files/sample.csv /home/ec2-user/certs/sample.csv

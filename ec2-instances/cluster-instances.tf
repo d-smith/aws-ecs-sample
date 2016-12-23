@@ -1,6 +1,6 @@
 resource "aws_security_group" "instance_sg" {
     name = "instance_sg"
-    description = "security group for api redshift cluster db maint"
+    description = "security group ecs instances"
 
     ingress {
             from_port = 22

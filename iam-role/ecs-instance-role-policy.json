@@ -17,7 +17,8 @@
         "ecr:GetDownloadUrlForLayer",
         "ecr:BatchGetImage",
         "logs:CreateLogStream",
-        "logs:PutLogEvents"
+        "logs:PutLogEvents",
+        "s3:GetObject"
       ],
       "Resource": "*"
     }
