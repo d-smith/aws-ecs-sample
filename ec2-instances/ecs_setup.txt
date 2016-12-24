@@ -4,3 +4,7 @@ start ecs
 yum install -y aws-cli jq
 mkdir -p /home/ec2-user/certs
 aws s3 cp s3://ds-misc-files/sample.csv /home/ec2-user/certs/sample.csv
+#instance_arn=$(curl -s http://localhost:51678/v1/metadata | jq -r '. | .ContainerInstanceArn' | awk -F/ '{print $NF}' )
+#az=$(curl -s http://instance-data/latest/meta-data/placement/availability-zone)
+#region=${az:0:${#az} - 1}
+#aws ecs start-task --cluster dev-center --task-definition hc_task:1 --container-instances $instance_arn --region $region
