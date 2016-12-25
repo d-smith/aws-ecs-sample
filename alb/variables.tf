@@ -6,3 +6,5 @@ variable "aws_region" {
 
 
 variable "vpc_id" {}
+variable "public_subnet_1" {}
+variable "public_subnet_2" {}
