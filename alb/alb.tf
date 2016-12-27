@@ -34,6 +34,7 @@ resource "aws_alb" "test" {
   }
 }
 
+
 resource "aws_alb_target_group" "test_tg" {
   name     = "tf-example-alb-tg"
   port     = 80
@@ -41,6 +42,7 @@ resource "aws_alb_target_group" "test_tg" {
   vpc_id   = "${var.vpc_id}"
 }
 
+/*
 resource "aws_alb_listener" "test_listener" {
    load_balancer_arn = "${aws_alb.test.arn}"
    port = "80"
@@ -51,3 +53,4 @@ resource "aws_alb_listener" "test_listener" {
      type = "forward"
    }
 }
+*/
