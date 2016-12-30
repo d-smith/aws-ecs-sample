@@ -7,4 +7,5 @@ variable "aws_region" {
 
 variable "cluster_id" {}
 variable "task_def" {}
-#variable "role_arn" {}
+variable "role_arn" {}
+variable "target_group_arn" {}
