@@ -1,9 +1,19 @@
-Set up order
+# ECS Application Creation Demo
 
-1. VPC
-2. Cluster definition
-3. IAM role for ec2 instance
-5. EC2 Instances
+## Set Up
+
+1. VPC (vpc)
+2. Cluster definition (ecs-cluster)
+3. IAM role for ec2 instance (iam-role)
+4. EC2 Instances (ec2-instances)
+5. Health check task def (hc) - Note this is a demo proxy for a service to be served via HTTP
+6. Application load balancer (alb) 
+7. ECS service
+
+
+## Running a Task on Each Cluster Member
+
+Not sure if this will auto restart... will need some more research.
 
 Run cadvisor everywhere - define the task, run it on the instance in the 
 start up script. On retrospect we can use cloud watch and AWS to monitor
@@ -12,7 +22,7 @@ To add it reference ecs_setup_with_cadvisor.txt in cluster-instances.tf
 
 
 
-Notes
+## Notes
 
 Console sequence - load balanced service
 
